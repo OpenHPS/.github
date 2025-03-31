@@ -1,12 +1,59 @@
-## Hi there 👋
+<h1 align="center">
+  <img alt="OpenHPS" src="https://openhps.org/images/logo_text-512.png" width="40%" /><br />
+  OpenHPS
+</h1>
 
-<!--
+## About OpenHPS
+OpenHPS (Open Source Hybrid Positioning System) is a powerful framework for building positioning systems that are **interoperable, scalable, and discoverable**. It provides a flexible architecture for processing positioning data across multiple domains.
 
-**Here are some ideas to get you started:**
+- 📡 **Supports RF-based positioning** (Wi-Fi, BLE, RFID, UWB)
+- 📷 **Enables computer vision-based localization**
+- 🧭 **Integrates IMU-based navigation** (sensor fusion, SLAM)
+- 🌍 **Handles geospatial and relative positioning**
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## Features
+- 2D, 3D, and geographical positioning
+- Extensible data processing pipeline
+- Support for multiple positioning algorithms (trilateration, triangulation, fingerprinting, SLAM...)
+- Modular add-ons for advanced functionality
+- Open source and community-driven
+
+## Add-ons
+### Positioning Algorithms
+- **[@openhps/imu](https://github.com/OpenHPS/openhps-imu)** - IMU sensor fusion
+- **[@openhps/rf](https://github.com/OpenHPS/openhps-rf)** - RF signal processing
+- **[@openhps/fingerprinting](https://github.com/OpenHPS/openhps-fingerprinting)** - Fingerprinting-based localization
+- **[@openhps/opencv](https://github.com/OpenHPS/openhps-opencv)** - Computer vision integration
+
+### Data Services
+- **[@openhps/mongodb](https://github.com/OpenHPS/openhps-mongodb)** - MongoDB storage
+- **[@openhps/rdf](https://github.com/OpenHPS/openhps-rdf)** - RDF data export
+- **[@openhps/solid](https://github.com/OpenHPS/openhps-solid)** - Solid PODs for data storage
+
+## Getting Started
+Install OpenHPS Core with:
+```bash
+npm install @openhps/core --save
+```
+
+Create a simple model:
+```typescript
+import { ModelBuilder } from '@openhps/core';
+
+ModelBuilder.create()
+    .build().then(model => {
+         // Use the model
+    });
+```
+
+## Documentation
+- 📘 [Getting Started](https://openhps.org/docs/getting-started)
+- 📜 [API Reference](https://openhps.org/docs/core)
+- 🏗️ [Examples](https://openhps.org/docs/examples)
+
+## Contributing
+Contributions are welcome! See our [contributing guidelines](https://github.com/OpenHPS/openhps-core/blob/main/CONTRIBUTING.md) for more information.
+
+## License
+OpenHPS is licensed under the Apache License 2.0. See the full license [here](https://www.apache.org/licenses/LICENSE-2.0).
+
