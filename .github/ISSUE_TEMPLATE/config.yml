@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+    - name: Documentation and API reference
+      url: https://openhps.org
+      about: The generated API documentation and getting-started guides.
+    - name: Questions and discussion
+      url: https://github.com/orgs/OpenHPS/discussions
+      about: Ask usage questions here rather than opening an issue.
