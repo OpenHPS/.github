@@ -10,6 +10,8 @@ OpenHPS (Open Source Hybrid Positioning System) is a powerful framework for buil
 - 🧭 **Integrates IMU-based navigation** (sensor fusion, SLAM)
 - 🌍 **Handles geospatial and relative positioning**
 
+Maintained by [MVdW-Software](https://mvdw-software.com).
+
 ## Features
 - 2D, 3D, and geographical positioning
 - Extensible data processing pipeline
